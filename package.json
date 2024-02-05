@@ -27,6 +27,7 @@
     "fs.realpath": "^1.0.0",
     "glob": "^7.1.6",
     "glob-parent": "^6.0.2",
+    "gsap": "^3.12.5",
     "has": "^1.0.4",
     "inflight": "^1.0.6",
     "inherits": "^2.0.4",

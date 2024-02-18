@@ -111,11 +111,11 @@ body::-webkit-scrollbar-track {
 
 #cursorVideo {
     position: absolute;
-    width: 350px;
+
     /* Adjust according to your video dimensions */
     top: 70px;
-    height: auto;
+    min-width: 500px;
+    min-height: 500px;
     z-index: 100;
-    align-content: center;
-    pointer-events: none;
+
 }

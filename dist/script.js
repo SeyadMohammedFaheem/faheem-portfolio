@@ -24,9 +24,41 @@ $(document).ready(function () {
 document.addEventListener('mousemove', function (e) {
     var cursorVideo = document.getElementById('cursorVideo');
     var posX = e.clientX;
-    cursorVideo.style.transition = '0.1s ease'; // Adjust the duration and easing as needed
+    var posY = window.pageYOffset
+    if (posY > 300) return;
+    cursorVideo.style.transition = '0.1s easeInOutElastic'; // Adjust the duration and easing as needed
     cursorVideo.style.left = posX + 'px';
+
+
 });
+
+document.addEventListener('scroll', (e) => {
+    console.log(e, 'e');
+    var cursorVideo = document.getElementById('cursorVideo');
+    var targetStop = document.getElementById('target-stop');
+    var targetStop = document.getElementById('video-container');
+    var posY = (window.pageYOffset * 4) + 200;
+    cursorVideo.style.transition = '0.1s easeInOutElastic'; // Adjust the duration and easing as needed
+    if (posY < 750) {
+
+        cursorVideo.style.top = `${posY}px`;
+        if (posY < 1020) {
+            cursorVideo.style.width = `${posY}px`;
+
+
+
+
+        }
+    } else {
+        cursorVideo.style.left = '50%';
+        cursorVideo.style.transform = 'translate(-50%, -50%)';
+        cursorVideo.style.width = '100%'; // Make the video full width
+
+        cursorVideo.style.transform = 'translate(-50%)'; // Center the video vertically
+
+
+    }
+})
 
 
 

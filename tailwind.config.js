@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         main: ['Poppins', 'sans-serif'],
-        satoshi: ['Satoshi', 'sans-serif'],
+        secondary: ['Syne', 'sans-serif'],
 
 
       },

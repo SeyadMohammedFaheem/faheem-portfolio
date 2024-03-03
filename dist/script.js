@@ -37,7 +37,7 @@ document.addEventListener('scroll', (e) => {
     var cursorVideo = document.getElementById('cursorVideo');
     var targetStop = document.getElementById('target-stop');
     var targetStop = document.getElementById('video-container');
-    var posY = (window.pageYOffset * 4) + 200;
+    var posY = (window.pageYOffset * 2) + 200;
     cursorVideo.style.transition = '0.1s easeInOutElastic'; // Adjust the duration and easing as needed
     if (posY < 750) {
 

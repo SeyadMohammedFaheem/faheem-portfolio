@@ -119,3 +119,16 @@ body::-webkit-scrollbar-track {
     z-index: 100;
 
 }
+
+#cursorimg {
+    position: fixed;
+
+    /* Adjust according to your video dimensions */
+    top: 70px;
+    mix-blend-mode: multiply;
+    min-height: 400px;
+    z-index: 100;
+    margin-left: 56px;
+    margin-right: 56px;
+
+}

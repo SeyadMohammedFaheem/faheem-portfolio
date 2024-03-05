@@ -59,6 +59,20 @@ document.addEventListener('scroll', (e) => {
 
     }
 })
+document.addEventListener('mousemove', function (e) {
+    var cursorimg = document.getElementById('cursorimg');
+    var posX = e.clientX;
+    var posY = e.clientX;
+    if (posY > 10);
 
+
+    cursorimg.style.transition = '0.1s easeInOutElastic'; // Adjust the duration and easing as needed
+    $('img').css('left', e.pageX);
+    $('img').css('top', e.pageY);
+
+
+
+
+});
 
 

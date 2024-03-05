@@ -9,6 +9,9 @@ module.exports = {
 
 
       },
+      aspectRatio: {
+        '4/3': '4 / 3',
+      },
       fontSize: {
         '10xl': ['10rem', {
           lineHeight: '10rem',

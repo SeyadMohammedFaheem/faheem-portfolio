@@ -68,7 +68,7 @@ document.addEventListener('mousemove', function (e) {
 
     cursorimg.style.transition = '0.1s easeInOutElastic'; // Adjust the duration and easing as needed
     $('img').css('left', e.pageX);
-    $('img').css('top', e.pageY);
+    // $('img').css('top', e.pageY);
 
 
 
